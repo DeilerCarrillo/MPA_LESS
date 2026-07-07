@@ -1,0 +1,38 @@
+@import "./components/navbar.less";
+@import "./components/hero.less";
+@import "./components/cards.less";
+@import "./components/half-panel.less";
+@import "./components/footer.less";
+
+@primary-color: #1f4e79;
+@secondary-color: #f4f7fb;
+@dark-color: #1f2937;
+@light-color: #ffffff;
+@text-color: #333333;
+@border-color: #d9e2ef;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: @secondary-color;
+  color: @text-color;
+}
+
+.pagina-servicios {
+  min-height: 65vh;
+  padding: 4rem 2rem;
+  text-align: center;
+
+  h1 {
+    color: @primary-color;
+  }
+
+  p {
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+}

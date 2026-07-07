@@ -1,18 +1,13 @@
 {
-  "name": "mpa-less",
-  "version": "0.0.0",
-  "private": true,
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
-  "devDependencies": {
-    "glob": "^13.0.6",
-    "less": "^4.6.7",
-    "vite": "^8.1.3",
-    "vite-plugin-handlebars": "^2.0.3",
-    "vite-plugin-purgecss": "^0.2.13"
-  }
+  "dependencies": {
+    "@vitejs/plugin-basic-ssl": "^2.1.0",
+    "less": "^4.4.2",
+    "vite": "^8.1.3"
+  },
+  "devDependencies": {}
 }

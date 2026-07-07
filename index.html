@@ -1,13 +1,91 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>mpa-less</title>
+    <title>Vite MPA con LESS</title>
   </head>
+
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <nav class="navbar">
+      <div class="navbar-logo">Deportes Pro</div>
+
+      <ul class="navbar-menu">
+        <li><a href="./index.html">Inicio</a></li>
+        <li><a href="./servicios.html">Servicios</a></li>
+        <li><a href="#cards">Deportes</a></li>
+        <li><a href="#footer">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <header class="hero-panel">
+      <div class="hero-content">
+        <h1>Entrena con pasión y mejora cada día</h1>
+        <p>
+          Página desarrollada con Vite MPA y estilos generados con LESS,
+          mostrando secciones básicas de un sitio moderno.
+        </p>
+        <a href="#cards" class="hero-button">Ver deportes</a>
+      </div>
+    </header>
+
+    <main>
+      <section id="cards" class="cards-section">
+        <h2>Deportes destacados</h2>
+
+        <div class="cards-container">
+          <article class="card">
+            <div class="card-icon">⚽</div>
+            <h3>Fútbol</h3>
+            <p>
+              Deporte de equipo donde se busca anotar goles y trabajar la
+              coordinación, resistencia y estrategia.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">🏀</div>
+            <h3>Baloncesto</h3>
+            <p>
+              Disciplina que fortalece la velocidad, el salto, la precisión y el
+              trabajo en equipo.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">🏊</div>
+            <h3>Natación</h3>
+            <p>
+              Actividad física completa que mejora la respiración, fuerza y
+              resistencia corporal.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="half-panel">
+        <div class="half-panel-image"></div>
+
+        <div class="half-panel-text">
+          <h2>La importancia del deporte</h2>
+          <p>
+            Practicar deporte ayuda a mejorar la salud física, reducir el estrés
+            y desarrollar disciplina. También permite compartir con otras
+            personas y aprender valores como el respeto y la constancia.
+          </p>
+          <p>
+            Este panel está dividido en dos partes: una mitad visual y otra
+            mitad con texto, cumpliendo el requisito del Half Inverted Panel.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer" class="footer">
+      <p>Desarrollado con Vite MPA y LESS</p>
+      <p>&copy; 2026 - Todos los derechos reservados</p>
+    </footer>
+
+    <script type="module" src="./src/main.js"></script>
   </body>
 </html>

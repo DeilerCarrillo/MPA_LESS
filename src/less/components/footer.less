@@ -1,0 +1,33 @@
+.footer {
+  background-color: @dark-color;
+  color: @light-color;
+  text-align: center;
+  padding: 1.5rem;
+
+  p {
+    margin: 0.3rem 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+
+  .half-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .half-panel-image {
+    min-height: 250px;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+}
