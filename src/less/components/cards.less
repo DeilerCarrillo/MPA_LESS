@@ -1,0 +1,38 @@
+.cards-section {
+  padding: 4rem 6%;
+  text-align: center;
+
+  h2 {
+    color: @primary-color;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: @light-color;
+  border: 1px solid @border-color;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+
+  h3 {
+    color: @primary-color;
+    margin-bottom: 0.8rem;
+  }
+
+  p {
+    line-height: 1.5;
+  }
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
